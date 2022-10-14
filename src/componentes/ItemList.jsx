@@ -9,7 +9,7 @@ const ItemList = ({ products })=> {
     <div className='boxProductos'>
     {products.map((product) => 
         
-        <div>
+      <div>
         <Card style={{ width: '18rem' }} className="Card">
           <Card.Img variant="top" src={product.img} />
           <Card.Body>
@@ -21,10 +21,10 @@ const ItemList = ({ products })=> {
             <Link to={`/item/${product.id}`}><Button id = "botonDetalle" variant="secondary" className='boton-detalle' > Ver detalle </Button></Link>
           </Card.Body>
         </Card>
-        </div>
+      </div>
         )}
-        </div>
-        );
+    </div>
+    );
 
 }
 
